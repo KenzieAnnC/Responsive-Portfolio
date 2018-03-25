@@ -10,7 +10,6 @@ body {
     box-sizing: border-box;
   }
   
-  /* general */
   
   .container {
     width: 100%;
@@ -50,10 +49,8 @@ body {
     font-size: 22px;
   }
   
-  /* header */
   
   #masthead {
-    position: fixed;
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
@@ -96,7 +93,6 @@ body {
     border-left: 0 none;
   }
   
-  /* footer */
   
   footer {
     padding: 30px 0;
@@ -117,7 +113,6 @@ body {
     border-bottom: 2px solid #eee;
   }
   
-  /* main */
   
   #main-container {
     padding-top: 130px;
@@ -134,8 +129,7 @@ body {
     border: 1px solid #ddd;
   }
   
-  /* portfolio page */
-  
+ 
   .work {
     position: relative;
     float: left;
@@ -168,9 +162,9 @@ body {
     border-bottom: 0;
   }
   
-  .auth-image {
+  .profileimg {
     float: left;
-    width: 200px;
+    width: 250px;
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
@@ -216,3 +210,24 @@ body {
     border: 0 none;
   }
   
+
+
+@media screen and (max-width:980px) {
+  #masthead, .container .mainsection {
+    width:100%; 
+  }
+}
+
+@media screen and (max-width:768px) {
+  #masthead, .container .mainsection {
+    width:100%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  #masthead {
+    width:100%; 
+    position: static;
+
+  }
+}
